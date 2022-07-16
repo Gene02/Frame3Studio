@@ -12,14 +12,14 @@ public class MovePlayerAllan : MonoBehaviour
 
     //variable IsGrounded
     float distToGround;
-    Collider collider;
+    Collider colliders;
 
     // Start is called before the first frame update
     void Start()
     {
         rig = GetComponent<Rigidbody>();
-        collider = GetComponent<Collider>();
-        distToGround = collider.bounds.extents.y;
+        colliders = GetComponent<Collider>();
+        distToGround = colliders.bounds.extents.y;
     }
 
     // Update is called once per frame
@@ -40,6 +40,6 @@ public class MovePlayerAllan : MonoBehaviour
     }
     private bool IsGrounded()
     {
-        return Physics.Raycast(transform.position + Vector3.up, Vector3.up, 1);
+        return Physics.Raycast(transform.position + Vector3.up, -Vector3.up, 1);
     }
 }
