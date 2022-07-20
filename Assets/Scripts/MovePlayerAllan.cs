@@ -32,14 +32,14 @@ public class MovePlayerAllan : MonoBehaviour
         rig.velocity = transform.forward * vertical * speed + new Vector3(0, rig.velocity.y, 0);
 
 
-        if (Input.GetKeyDown(KeyCode.Space) && IsGrounded())
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             rig.velocity = new Vector3(rig.velocity.x, rig.velocity.y + jumpForce, rig.velocity.z);
             
         }
     }
-    private bool IsGrounded()
-    {
-        return Physics.Raycast(transform.position + Vector3.up, -Vector3.up, 1);
-    }
+    //private bool IsGrounded()
+    //{
+        //return Physics.Raycast(transform.position + Vector3.up, -Vector3.up, 1);
+    //}
 }
