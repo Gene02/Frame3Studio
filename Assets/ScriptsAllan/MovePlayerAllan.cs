@@ -15,6 +15,8 @@ public class MovePlayerAllan : MonoBehaviour
     bool isJump = false;
     bool floorDetected = false;
 
+    
+
 
 
 
@@ -57,11 +59,9 @@ public class MovePlayerAllan : MonoBehaviour
         }
         
     }
+   
+
+
+
     
-
-
-    //private bool IsGrounded()
-    //{
-    //return Physics.Raycast(transform.position + Vector3.up, -Vector3.up, 1);
-    //}
 }
