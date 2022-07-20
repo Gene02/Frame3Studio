@@ -2,26 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
-public class MovePlayerAllan : MonoBehaviour
+public class Player : MonoBehaviour
 {
-    //variables de movimiento
     Rigidbody rig;
-    public float speed = 5;
-    public float jumpForce = 5;
 
-    //variable IsGrounded
-    float distToGround;
-    Collider colliders;
+    public float speed =1;
+    public float jumpForce =1;
 
-    
 
     // Start is called before the first frame update
     void Start()
     {
         rig = GetComponent<Rigidbody>();
-        colliders = GetComponent<Collider>();
-        distToGround = colliders.bounds.extents.y;
     }
 
     // Update is called once per frame
@@ -33,16 +25,11 @@ public class MovePlayerAllan : MonoBehaviour
         transform.Rotate(Vector3.up, horizontal);
         rig.velocity = transform.forward * vertical * speed + new Vector3(0, rig.velocity.y, 0);
 
-
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            rig.velocity = new Vector3(rig.velocity.x, rig.velocity.y + jumpForce, rig.velocity.z);
-
+            rig.velocity = new Vector3(rig.velocity.x, rig.velocity.y + jumpForce, rig.velocity.y);
         }
+
     }
-   
-        //private bool IsGrounded()
-        //{
-        //return Physics.Raycast(transform.position + Vector3.up, -Vector3.up, 1);
-        //}
-    }
+    
+}
