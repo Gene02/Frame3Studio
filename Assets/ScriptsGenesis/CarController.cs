@@ -11,6 +11,24 @@ public class CarController : MonoBehaviour
     public float horizontalInput;
 
     public float forwardInput;
+
+    public int contador;
+
+    public Rigidbody rb;
+
+
+    public void OnTriggerEnter(Collider other)
+    {
+        Destroy(other.gameObject);
+        contador = contador + 1;
+    }
+
+
+    public void Awake()
+    {
+        rb = GetComponent<Rigidbody>();
+        contador = 0;
+    }
     
     void Start()
     {
@@ -32,4 +50,5 @@ public class CarController : MonoBehaviour
 
        
     }
+    
 }
