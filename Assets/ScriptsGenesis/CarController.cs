@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CarController : MonoBehaviour
 {
@@ -16,11 +17,27 @@ public class CarController : MonoBehaviour
 
     public Rigidbody rb;
 
+    public Text puntuacion;
+
+    public Text Ganar;
+
 
     public void OnTriggerEnter(Collider other)
     {
         Destroy(other.gameObject);
         contador = contador + 1;
+        actualizarmarcador();
+        
+        if(contador >= 2)
+        {
+            Ganar.gameObject.SetActive(true);
+        }
+
+    }
+
+    private void actualizarmarcador()
+    {
+        puntuacion.text = "Puntuacion: " + contador;
     }
 
 
@@ -28,6 +45,9 @@ public class CarController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         contador = 0;
+        actualizarmarcador();
+        Ganar.gameObject.SetActive(false);
+        
     }
     
     void Start()
