@@ -10,7 +10,7 @@ public class Cannon2 : MonoBehaviour
     public float fireRate;
     
 
-    public float shotForce;
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +21,7 @@ public class Cannon2 : MonoBehaviour
     void Update()
     {
        
-        cannonBall.GetComponent<Rigidbody>().AddForce(shotSpawn.forward * shotForce);
+    
     }
     void Fire()
     {
