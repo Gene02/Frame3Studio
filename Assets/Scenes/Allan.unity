@@ -519,7 +519,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 351549077}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.24, y: 2.88, z: 19.24}
+  m_LocalPosition: {x: 0.15, y: 2.88, z: 41.72}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1495599618}
@@ -1023,8 +1023,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 952536846}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.16, y: 1.81, z: 46.71}
-  m_LocalScale: {x: 6.891934, y: 0.29189602, z: 14.872561}
+  m_LocalPosition: {x: -1.26, y: 1.81, z: 46.71}
+  m_LocalScale: {x: 7.1262736, y: 0.29189602, z: 14.872561}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -1167,7 +1167,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1465799729}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.428, y: 3.001, z: 40.489}
+  m_LocalPosition: {x: -3.382, y: 3.001, z: 41.91}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2128691043}
@@ -1325,6 +1325,7 @@ GameObject:
   - component: {fileID: 1774475794}
   - component: {fileID: 1774475793}
   - component: {fileID: 1774475792}
+  - component: {fileID: 1774475796}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -1403,12 +1404,29 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1774475791}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -3.88, y: 2.74, z: 40.5}
+  m_LocalPosition: {x: -3.88, y: 2.74, z: 41.919}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &1774475796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1774475791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa47b54f711e39b4086af5de252df3a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cannonBall: {fileID: 280778485838430909, guid: 94d4726711362b74dad710c6c239cf2c, type: 3}
+  shotSpawn: {fileID: 1465799730}
+  delay: 2
+  fireRate: 2
+  shotForce: 0
 --- !u!1 &2128691041
 GameObject:
   m_ObjectHideFlags: 0
@@ -1418,7 +1436,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2128691043}
-  - component: {fileID: 2128691042}
   m_Layer: 0
   m_Name: CannonBallSpamer
   m_TagString: Untagged
@@ -1426,27 +1443,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2128691042
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2128691041}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91048e89021426044943463785146cca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CannonBallPrefab: {fileID: 280778485838430909, guid: 94d4726711362b74dad710c6c239cf2c, type: 3}
-  spawnPoints:
-  - {fileID: 1465799730}
-  acceleration: 3
-  initialTime: 0
-  minSpeed: 0.3
-  maxSpeed: 5
-  minDelay: 0.1
-  maxDelay: 1
 --- !u!4 &2128691043
 Transform:
   m_ObjectHideFlags: 0
