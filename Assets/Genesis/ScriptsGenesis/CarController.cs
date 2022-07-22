@@ -21,14 +21,22 @@ public class CarController : MonoBehaviour
 
     public Text Ganar;
 
+    public AudioSource quienEmite;
+
+    public AudioClip elsonido;
+
+    public float volumen = 1f;
+
+
+
 
     public void OnTriggerEnter(Collider other)
     {
         Destroy(other.gameObject);
         contador = contador + 1;
         actualizarmarcador();
-        
-        if(contador >= 2)
+        quienEmite.PlayOneShot(elsonido, volumen);      
+        if(contador >= 10)
         {
             Ganar.gameObject.SetActive(true);
         }
@@ -37,7 +45,7 @@ public class CarController : MonoBehaviour
 
     private void actualizarmarcador()
     {
-        puntuacion.text = "Puntuacion: " + contador;
+        puntuacion.text = " " + contador;
     }
 
 
