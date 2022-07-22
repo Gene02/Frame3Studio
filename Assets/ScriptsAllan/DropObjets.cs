@@ -13,7 +13,20 @@ public class DropObjets : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(picketObject != null)
+        {
+            if (Input.GetMouseButtonDown(1))
+            {
+
+                picketObject.GetComponent<Rigidbody>().useGravity = true;
+
+                picketObject.GetComponent<Rigidbody>().isKinematic = false;
+
+                picketObject.gameObject.transform.SetParent(null);
+
+                picketObject = null;
+            }
+        }
     }
     private void OnTriggerStay(Collider other)
     {
