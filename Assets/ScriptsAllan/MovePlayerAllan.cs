@@ -43,13 +43,13 @@ public class MovePlayerAllan : MonoBehaviour
         if (Physics.Raycast(transform.position, floor, 2.03f))
         {
             floorDetected = true;
-            print("Contacto con el suelo");
+            
 
         }
         else
         {
             floorDetected = false;
-            print("Sin contacto con el suelo");
+            
         }
         isJump = Input.GetButtonDown("Jump");
 
