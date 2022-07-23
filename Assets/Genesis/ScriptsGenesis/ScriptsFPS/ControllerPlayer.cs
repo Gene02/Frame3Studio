@@ -22,6 +22,10 @@ public class ControllerPlayer : MonoBehaviour
 
     public LayerMask whatIsGround;
 
+    public GameObject bullet;
+
+    public Transform firePoint;
+
     [Header("Gravity")]
     public float gravityModifier;
 
@@ -94,6 +98,25 @@ public class ControllerPlayer : MonoBehaviour
         transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, camTransform.rotation.eulerAngles.y + mouseInput.x, transform.rotation.eulerAngles.z);
 
         camTransform.rotation = Quaternion.Euler(camTransform.rotation.eulerAngles + new Vector3(-mouseInput.y, 0f, 0f));
+
+        //shooting
+        if (Input.GetMouseButtonDown(0))
+        {
+            RaycastHit hit;
+            if(Physics.Raycast(camTransform.position, camTransform.forward, out hit, 50f))
+            {
+                if(Vector3.Distance(camTransform.position, hit.point) > 2f)
+                {
+                    firePoint.LookAt(hit.point);
+                }
+                else
+                {
+                    firePoint.LookAt(camTransform.position + (camTransform.forward * 30f));
+                }
+            }
+
+            Instantiate(bullet, firePoint.position, firePoint.rotation);
+        }
 
         anim.SetFloat("moveSpeed", moveInput.magnitude);
     }
