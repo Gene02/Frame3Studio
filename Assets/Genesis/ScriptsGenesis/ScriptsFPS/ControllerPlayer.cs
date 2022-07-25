@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ControllerPlayer : MonoBehaviour
 {
+    public static ControllerPlayer instance;
     public float moveSpeed;
 
     public CharacterController characterController;
@@ -35,9 +36,9 @@ public class ControllerPlayer : MonoBehaviour
     public Animator anim;
    
     
-    void Start()
+    void Awake()
     {
-        
+        instance = this;
     }
 
  

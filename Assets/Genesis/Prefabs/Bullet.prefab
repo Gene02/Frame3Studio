@@ -114,6 +114,9 @@ MonoBehaviour:
   lifeTime: 5
   rig: {fileID: 4786890215090753452}
   impactEffect: {fileID: 6585852359204246437, guid: 3ef4d3953a58bed48a187917b4c74af1, type: 3}
+  damage: 1
+  damageEnemy: 1
+  damagePlayer: 0
 --- !u!54 &4786890215090753452
 Rigidbody:
   m_ObjectHideFlags: 0
