@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 5222381}
   - component: {fileID: 5222380}
   - component: {fileID: 5222379}
+  - component: {fileID: 5222383}
   m_Layer: 0
   m_Name: EstanteCubo
   m_TagString: Untagged
@@ -218,6 +219,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5222383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5222378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aebf63cab0be7184c8ad0dfa0863645f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &13199213
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1473,6 +1486,7 @@ GameObject:
   - component: {fileID: 494812345}
   - component: {fileID: 494812344}
   - component: {fileID: 494812343}
+  - component: {fileID: 494812347}
   m_Layer: 0
   m_Name: EstanteCapsula
   m_TagString: Untagged
@@ -1556,6 +1570,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &494812347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 494812342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9558b635bc8a9a24ab75e0660ddc6a60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &551176960
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2247,6 +2273,7 @@ GameObject:
   - component: {fileID: 1339548528}
   - component: {fileID: 1339548527}
   - component: {fileID: 1339548526}
+  - component: {fileID: 1339548530}
   m_Layer: 0
   m_Name: EstanteEsfera
   m_TagString: Untagged
@@ -2330,6 +2357,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1339548530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1339548525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f232c2cd68a912d42b34e3c57e5a935a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1344303421
 PrefabInstance:
   m_ObjectHideFlags: 0
