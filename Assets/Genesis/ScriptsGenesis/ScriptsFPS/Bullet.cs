@@ -12,6 +12,8 @@ public class Bullet : MonoBehaviour
     public int damage = 1;
 
     public bool damageEnemy, damagePlayer;
+
+    public AudioSource audio;
     
     void Start()
     {

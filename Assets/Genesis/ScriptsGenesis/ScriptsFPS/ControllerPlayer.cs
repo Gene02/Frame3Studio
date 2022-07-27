@@ -34,11 +34,24 @@ public class ControllerPlayer : MonoBehaviour
     public float mouseSensitivity;
 
     public Animator anim;
+
+    
+
+    public Gun activeGun;
+
+    public List<Gun> allGuns = new List<Gun>();
+    public int currentGun;
    
     
     void Awake()
     {
         instance = this;
+    }
+
+    private void Start()
+    {
+        activeGun = allGuns[currentGun];
+        activeGun.gameObject.SetActive(true);
     }
 
  
@@ -113,12 +126,42 @@ public class ControllerPlayer : MonoBehaviour
                 else
                 {
                     firePoint.LookAt(camTransform.position + (camTransform.forward * 30f));
+
+                    FireShot();
                 }
+
             }
+
+            if(Input.GetButtonDown("Switch Gun"))
+            {
+                SwitchGun();
+            }
+
 
             Instantiate(bullet, firePoint.position, firePoint.rotation);
         }
 
         anim.SetFloat("moveSpeed", moveInput.magnitude);
+        anim.SetBool("onGround", canJump);
+    }
+
+    public void FireShot()
+    {
+        Instantiate(activeGun.bullet, firePoint.position, firePoint.rotation);
+    }
+
+    public void SwitchGun()
+    {
+        activeGun.gameObject.SetActive(false);
+
+        currentGun++;
+
+        if(currentGun >= allGuns.Count)
+        {
+            currentGun = 0;
+        }
+
+        activeGun = allGuns[currentGun];
+        activeGun.gameObject.SetActive(true);
     }
 }

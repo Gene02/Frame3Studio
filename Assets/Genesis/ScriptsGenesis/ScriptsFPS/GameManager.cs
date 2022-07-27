@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
-    public float waitAfterDying = 0.5f;
+    public float waitAfterDying = 0f;
 
     private void Awake()
     {
