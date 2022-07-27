@@ -7,17 +7,18 @@ TagManager:
   - Ground
   - Hammer
   - Objeto
+  - Enemy
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
+  - Bullets
+  - Enemy
+  - Player
+  - Enemy Bullets
   - 
   - 
   - 
