@@ -51,7 +51,7 @@ public class PlayerHealth : MonoBehaviour
 
                 AudioManager.instance.StopMusic();
 
-                AudioManager.instance.PlaySFX(0);
+                //AudioManager.instance.PlaySFX(0);
                 
             }
 
