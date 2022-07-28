@@ -9,7 +9,7 @@ public class PlayerHealth : MonoBehaviour
     public int maxHealth, currentHealth;
     private float invincibleCounter;
     public float invincibleLength;
-    public AudioSource audio;
+    
     
     void Awake()
     {
@@ -22,6 +22,8 @@ public class PlayerHealth : MonoBehaviour
         UIController.instance.healthSlider.maxValue = maxHealth;
         UIController.instance.healthSlider.value = currentHealth;
         UIController.instance.healthText.text = "Health" + currentHealth + "/" + maxHealth;
+
+        
     }
 
     

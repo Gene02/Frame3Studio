@@ -13,11 +13,11 @@ public class Bullet : MonoBehaviour
 
     public bool damageEnemy, damagePlayer;
 
-    public AudioSource audio;
-    
+   
+
     void Start()
     {
-        
+       
     }
 
     
@@ -37,6 +37,7 @@ public class Bullet : MonoBehaviour
     {
         if (other.gameObject.tag == "Enemy" && damageEnemy)
         {
+            
             other.gameObject.GetComponent<EnemyHealthController>().DamageEnemy(damage);
         }
 
