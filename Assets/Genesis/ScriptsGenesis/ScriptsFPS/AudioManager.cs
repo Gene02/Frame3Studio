@@ -30,4 +30,16 @@ public class AudioManager : MonoBehaviour
     {
         music.Stop();
     }
+
+    public void PlaySFX(int sfxNumber)
+    {
+        soundEffect[sfxNumber].Stop();
+        soundEffect[sfxNumber].Play();
+    }
+
+    public void StopSFX(int sfxNumber)
+    {
+        soundEffect[sfxNumber].Stop();
+        
+    }
 }
