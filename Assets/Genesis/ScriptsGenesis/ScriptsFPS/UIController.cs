@@ -10,6 +10,11 @@ public class UIController : MonoBehaviour
     public Text healthText;
     public Image damageEffect;
     public float damageAlpha = .25f, damageFadeSpeed = 2f;
+
+    public GameObject pauseScreen;
+
+    public Image blackScreen;
+    public float fadeSpeed = 1.5f;
     
     void Awake()
     {
@@ -23,6 +28,15 @@ public class UIController : MonoBehaviour
         {
             damageEffect.color = new Color(damageEffect.color.r, damageEffect.color.g, damageEffect.color.b, Mathf.MoveTowards(damageEffect.color.a, 0f, damageFadeSpeed * Time.deltaTime));
         }
+
+        /*if (GameManager.instance.levelEnding)
+        {
+            blackScreen.color = new Color(blackScreen.color.r, blackScreen.color.g, blackScreen.color.b, Mathf.MoveTowards(blackScreen.color.a, 0f, fadeSpeed * Time.deltaTime));
+        }
+        else
+        {
+            blackScreen.color = new Color(blackScreen.color.r, blackScreen.color.g, blackScreen.color.b, Mathf.MoveTowards(blackScreen.color.a, 1f, fadeSpeed * Time.deltaTime));
+        }*/
     }
 
     public void ShowDamage()

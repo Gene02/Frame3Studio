@@ -57,6 +57,10 @@ public class ControllerPlayer : MonoBehaviour
  
     void Update()
     {
+        /*if (!UIController.GameManager.instance.ending)*/
+        {
+
+        }
         //moveInput.x = Input.GetAxis("Horizontal") * moveSpeed *Time.deltaTime;
         //moveInput.z = Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime;
 
