@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3684269469913148213}
   - component: {fileID: 3684269469913148210}
   - component: {fileID: 3546924938577392989}
-  - component: {fileID: 9086911710080037813}
+  - component: {fileID: -9132685889518071589}
   m_Layer: 0
   m_Name: BulletEnemy
   m_TagString: Untagged
@@ -250,7 +250,7 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
---- !u!82 &9086911710080037813
+--- !u!82 &-9132685889518071589
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -259,9 +259,9 @@ AudioSource:
   m_GameObject: {fileID: 3684269469913148211}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -1992779908847754669, guid: a49a924b02f15c9438d39c89d1cd0553, type: 2}
   m_audioClip: {fileID: 8300000, guid: e7d6e95069db168439f2872116cc4b3d, type: 3}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 0

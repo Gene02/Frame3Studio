@@ -9,6 +9,9 @@ public class GameManager : MonoBehaviour
 
     public float waitAfterDying = 0f;
 
+    [HideInInspector]
+    public bool ending;
+
     private void Awake()
     {
         instance = this;
@@ -22,7 +25,10 @@ public class GameManager : MonoBehaviour
     
     void Update()
     {
-        
+        if (Input.GetButtonDown("Pause"))
+        {
+            PauseUnpause();
+        }
     }
 
     public void PlayerDied()
@@ -34,5 +40,23 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(waitAfterDying);
 
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void PauseUnpause()
+    {
+        /*if (UIController.instance.pauseScreen.activeInHerarchy)
+        {
+            UIController.instance.pauseScreen.SetActive(false);
+            Cursor.LockState = CursorLockMode.Locked;
+            Time.timeScale = 1f;
+        }
+        else
+        {
+            UIController.instance.pauseScreen.SetActive(true);
+
+            Cursor.lockState = CursorLockMode.None;
+
+            Time.timeScale = 0f;
+        }*/
     }
 }

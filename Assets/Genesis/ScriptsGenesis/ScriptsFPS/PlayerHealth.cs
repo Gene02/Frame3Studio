@@ -9,7 +9,7 @@ public class PlayerHealth : MonoBehaviour
     public int maxHealth, currentHealth;
     private float invincibleCounter;
     public float invincibleLength;
-    public AudioSource audio;
+    
     
     void Awake()
     {
@@ -22,6 +22,8 @@ public class PlayerHealth : MonoBehaviour
         UIController.instance.healthSlider.maxValue = maxHealth;
         UIController.instance.healthSlider.value = currentHealth;
         UIController.instance.healthText.text = "Health" + currentHealth + "/" + maxHealth;
+
+        
     }
 
     
@@ -37,6 +39,8 @@ public class PlayerHealth : MonoBehaviour
     {
         if(invincibleCounter <= 0)
         {
+            AudioManager.instance.PlaySFX(0);
+
             currentHealth -= damageAmount;
 
             UIController.instance.ShowDamage();
@@ -50,9 +54,9 @@ public class PlayerHealth : MonoBehaviour
                 GameManager.instance.PlayerDied();
 
                 AudioManager.instance.StopMusic();
+                AudioManager.instance.PlaySFX(1);
+                AudioManager.instance.StopSFX(1);
 
-                //AudioManager.instance.PlaySFX(0);
-                
             }
 
             invincibleCounter = invincibleLength;
