@@ -7,19 +7,19 @@ public class PabloPlayer : MonoBehaviour
     Rigidbody rig;
     public float  speed = 5;
 
-    public Transform camera;
-    float vMouse;
-    float hMouse;
-    float yReal = 0.0f;
+    public Vector2 sensibility;
+    private  new Transform camera;
 
-    public float horizontalSpeed;
-    public float verticalSpeed;
+    
+
+    
 
     // Start is called before the first frame update
     void Start()
     {
         rig = GetComponent<Rigidbody>();
         Cursor.lockState = CursorLockMode.Locked;
+        camera = transform.transform.Find("Main Camera");
     }
 
     // Update is called once per frame
@@ -28,16 +28,18 @@ public class PabloPlayer : MonoBehaviour
         float vertical = Input.GetAxis("Vertical");
         rig.velocity = transform.forward * vertical * speed + new Vector3(0, rig.velocity.y, 0);
 
-        VistaMouse();
-    }
-    void VistaMouse()
-    {
-        hMouse = Input.GetAxis("Mouse X") * horizontalSpeed * Time.deltaTime;
-        vMouse = Input.GetAxis("Mouse Y") * verticalSpeed * Time.deltaTime;
+        float hor = Input.GetAxis("Mouse X");
+        float ver = Input.GetAxis("Mouse Y");
 
-
-        yReal -= vMouse;
-        transform.Rotate(0, hMouse, 0);
-        camera.localRotation = Quaternion.Euler(yReal, 0, 0);
+        if (hor != 0)
+        {
+            transform.Rotate(Vector3.up * hor * sensibility.x);
+        }
+        if(ver != 0)
+        {
+            camera.Rotate(Vector3.left * ver * sensibility.y);
+        }
+        
     }
+    
 }
