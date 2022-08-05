@@ -2267,7 +2267,7 @@ GameObject:
   - component: {fileID: 941097375}
   - component: {fileID: 941097374}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Vidrio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2342,12 +2342,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 941097373}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.9923, y: 3.1981, z: 3.5}
+  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
+  m_LocalPosition: {x: -3.9923, y: 5.1281, z: -3.5}
   m_LocalScale: {x: 7.3407717, y: 1.5431767, z: 0.086655}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_Father: {fileID: 1108645726}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &956577978
 GameObject:
@@ -2617,7 +2617,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d05969dd3484e654b91e893b53e4a630, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.93
+      value: -1.95
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d05969dd3484e654b91e893b53e4a630, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2661,6 +2661,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d05969dd3484e654b91e893b53e4a630, type: 3}
+--- !u!4 &1108645726 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d05969dd3484e654b91e893b53e4a630, type: 3}
+  m_PrefabInstance: {fileID: 1108645725}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1148073109
 GameObject:
   m_ObjectHideFlags: 0
