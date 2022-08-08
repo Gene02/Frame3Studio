@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerA : MonoBehaviour
 {
+
+
     public Vector3 gravity;
     public Vector3 jumpSpeed;
 
