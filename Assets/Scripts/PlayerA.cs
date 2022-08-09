@@ -22,7 +22,7 @@ public class PlayerA : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-     if (Input.anyKeyDown && isGrounded)
+     if (Input.GetButtonDown("Jump") && isGrounded)
         {
             rb.velocity = jumpSpeed;
             isGrounded = true;
