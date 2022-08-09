@@ -7,7 +7,7 @@ public class EnemyMovement : MonoBehaviour
 {
     
     private bool chasing;
-    public float distanceToChase = 10f, distanceToLose = 15f, distanceToStop;
+    public float distanceToChase = 30f, distanceToLose = 15f, distanceToStop;
 
     private Vector3 targetPoint, startPoint;
 
