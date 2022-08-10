@@ -196,7 +196,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   martillo: {fileID: 5820553822218654080}
-  rotationSpeeed: 240
+  rotationSpeeed: 400
 --- !u!65 &5820553822218654083
 BoxCollider:
   m_ObjectHideFlags: 0
