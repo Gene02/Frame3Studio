@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class HammerMove : MonoBehaviour
 {
- 
 
+    public Transform martillo;
+    public float rotationSpeeed = 180f;
 
     // Start is called before the first frame update
     void Start()
@@ -16,7 +17,7 @@ public class HammerMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(Vector3.up, 1);
+        martillo.Rotate(Vector3.up * rotationSpeeed * Time.deltaTime);
     }
    
 }
