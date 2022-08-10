@@ -195,6 +195,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df98324581d92f7498af41746d3fbb52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  martillo: {fileID: 5820553822218654080}
+  rotationSpeeed: 400
 --- !u!65 &5820553822218654083
 BoxCollider:
   m_ObjectHideFlags: 0
