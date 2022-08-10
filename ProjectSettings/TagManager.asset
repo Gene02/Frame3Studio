@@ -8,6 +8,7 @@ TagManager:
   - Hammer
   - Objeto
   - Enemy
+  - Combustible
   layers:
   - Default
   - TransparentFX
