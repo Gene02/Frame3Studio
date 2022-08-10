@@ -25,6 +25,7 @@ public class Combustible : MonoBehaviour
         if (other.tag == "Player")
         {
             Score.scoreScript.ScoreUpdate();
+
             combustible.SetActive(false);
         }
 

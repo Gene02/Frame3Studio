@@ -7,7 +7,7 @@ public class Score : MonoBehaviour
 {
 
     public Text t;
-    public int Combustible;
+    public int score;
 
     public static int actualScore;
     public static Score scoreScript;
@@ -22,9 +22,9 @@ public class Score : MonoBehaviour
     public void ScoreUpdate()
     {
 
-        Combustible++;
-        actualScore = Combustible;
-        t.text = "Combustible : " + Combustible.ToString();
+        score++;
+        actualScore = score;
+        t.text = "Combustible : " + score.ToString();
     }
 
 }
