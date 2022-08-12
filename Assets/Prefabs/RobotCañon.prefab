@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 9206373505003067565}
   - component: {fileID: 6352165255511436391}
   - component: {fileID: 5757562972057073934}
+  - component: {fileID: 547410642165912077}
+  - component: {fileID: 8943995031159758292}
   m_Layer: 0
   m_Name: "RobotCa\xF1on"
   m_TagString: Untagged
@@ -101,3 +103,33 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &547410642165912077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4838995570208656818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1901dc5c70a14394a9515df174f296f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollFactor: -0.5
+  gameVelocity: {x: 10, y: 0, z: 0}
+--- !u!54 &8943995031159758292
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4838995570208656818}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 124
+  m_CollisionDetection: 0
