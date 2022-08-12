@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 9206373505003067565}
   - component: {fileID: 6352165255511436391}
   - component: {fileID: 5757562972057073934}
-  - component: {fileID: 7995252108684536843}
   m_Layer: 0
   m_Name: "RobotCa\xF1on"
   m_TagString: Untagged
@@ -102,16 +101,3 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!65 &7995252108684536843
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4838995570208656818}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.042999998, y: 0.049999997, z: 0.045}
-  m_Center: {x: -0.000040723942, y: 0.008335828, z: -0.0023476249}
