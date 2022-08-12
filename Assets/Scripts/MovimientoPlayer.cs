@@ -33,9 +33,9 @@ public class MovimientoPlayer : MonoBehaviour
     void Update()
     {
         float horizontalInput = Input.GetAxis("Horizontal");
-        float verticalInput = Input.GetAxis("Vertical");
+        //float verticalInput = Input.GetAxis("Vertical");
 
-        Vector3 moventDirection = new Vector3(horizontalInput, 0, verticalInput);
+        Vector3 moventDirection = new Vector3(horizontalInput, 0, 0);
         moventDirection.Normalize();
 
         transform.position = transform.position + moventDirection * speed * Time.deltaTime;
