@@ -25,7 +25,7 @@ public class PlayerMovement : MonoBehaviour
         {
             rigidBody.velocity = new Vector3(rigidBody.velocity.x, rigidBody.velocity.y + jumpForce, rigidBody.velocity.z);
         }
-        // mover el personaje haciad adelante y atras
+      //   mover el personaje haciad adelante y atras
         float vertical = Input.GetAxis("Vertical");
         rigidBody.velocity = transform.forward * Speed * vertical + new Vector3(0, rigidBody.velocity.y, 0);
         
