@@ -12,6 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Genesis.unity
     guid: f52f5c48d6dfd7f47b5edf2f8ba08e6b
   - enabled: 1
-    path: Assets/Genesis/victoria.unity
+    path: Assets/Scenes/victoria.unity
     guid: 9dbfd88ee7389ac4191fafe0c306569b
   m_configObjects: {}
