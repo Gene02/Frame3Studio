@@ -5042,6 +5042,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'CanvasDialogo '
       objectReference: {fileID: 0}
+    - target: {fileID: 7749212117560642238, guid: 7a22acab6fbeee747a8f31b716545e83, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a22acab6fbeee747a8f31b716545e83, type: 3}
 --- !u!4 &426573490 stripped
@@ -38535,8 +38539,8 @@ MonoBehaviour:
   - "ModeloTx2022: Hola \xA1bip-bop! , bienvenido a la base espacial, ubicada en
     alg\xFAn lugar! \xA1bop-bop!\n"
   - "ModeloTx2022: Podr\xE1s encontrar combustible por toda la base \xA1pirip- pop!
-    para que vuelvas a poner en marcha tu nave, solo deber\xE1s evitar los obstaculos
-    y alg\xFAnos enemigos que te la har\xE1n dificil! \xA1bop-bop!"
+    para que vuelvas a poner en marcha tu nave, solo deber\xE1s evitar los obstaculos"
+  - " alg\xFAnos enemigos que te la har\xE1n dificil! \xA1bop-bop!"
   - "ModeloTx2022: Suerte extraterrestre, \xA1birip-bop!\n"
 --- !u!95 &7226850795843619098
 Animator:
