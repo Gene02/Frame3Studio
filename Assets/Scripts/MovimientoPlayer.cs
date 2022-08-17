@@ -10,6 +10,8 @@ public class MovimientoPlayer : MonoBehaviour
     public Vector3 gravity;
     public Vector3 jumpSpeed;
 
+    private Animator m_Animator;
+
     bool isGrounded = false;
     Rigidbody rb;
     //public float rotationSpeed = 50f;
@@ -26,13 +28,15 @@ public class MovimientoPlayer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-      //  rigidbody = GetComponent<Rigidbody>();
+        //  rigidbody = GetComponent<Rigidbody>();
+        m_Animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
         float horizontalInput = Input.GetAxis("Horizontal");
+        
         //float verticalInput = Input.GetAxis("Vertical");
 
         Vector3 moventDirection = new Vector3(horizontalInput, 0, 0);
@@ -40,10 +44,13 @@ public class MovimientoPlayer : MonoBehaviour
 
         transform.position = transform.position + moventDirection * speed * Time.deltaTime;
 
+        m_Animator.SetBool("Running", true);
+
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             rb.velocity = jumpSpeed;
             isGrounded = true;
+            m_Animator.SetBool("Running", true);
         }
 
         //  if(moventDirection != Vector3.zero) transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(moventDirection), rotationSpeed * Time.deltaTime);
