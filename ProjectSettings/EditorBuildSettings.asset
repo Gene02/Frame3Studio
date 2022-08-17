@@ -5,12 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/Abraham.unity
-    guid: e7c73c1f8877d154f9b8262f403a6472
   - enabled: 1
-    path: Assets/Scenes/Genesis.unity
-    guid: f52f5c48d6dfd7f47b5edf2f8ba08e6b
+    path: Assets/Scenes/Pablo.unity
+    guid: 35c4e4dcd1f4afc439cfea5341af7719
+  - enabled: 1
+    path: Assets/Scenes/MainScene.unity
+    guid: c2ed7be122507d844a136d0deb6ce611
   - enabled: 1
     path: Assets/Scenes/victoria.unity
     guid: 9dbfd88ee7389ac4191fafe0c306569b
