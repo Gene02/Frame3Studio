@@ -15,6 +15,8 @@ public class DialogueScript : MonoBehaviour
     private bool didDialogueStart;
     private int lineIndex;
 
+    public AudioSource _audio;
+
 
 
     // Update is called once per frame
@@ -72,7 +74,7 @@ public class DialogueScript : MonoBehaviour
         {
             isPlayerInRange = true;
             diaglogueMark.SetActive(true);
-            
+            _audio.Play();
         }
         
     }
@@ -82,7 +84,7 @@ public class DialogueScript : MonoBehaviour
         {
             isPlayerInRange = false;
             diaglogueMark.SetActive(false);
-            
+            _audio.Stop();
         }
     }
 }

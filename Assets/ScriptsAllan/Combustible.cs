@@ -7,11 +7,14 @@ public class Combustible : MonoBehaviour
     public Transform combustibleContainer;
     public float rotationSpeed = 180f;
 
+    AudioSource audioSource;
+    public AudioClip combustibleSound;
+
     public GameObject combustible;
     // Start is called before the first frame update
     void Start()
     {
-        
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -26,7 +29,8 @@ public class Combustible : MonoBehaviour
             Score.scoreScript.ScoreUpdate();
 
             combustible.SetActive(false);
-
+            audioSource.clip = combustibleSound;
+            audioSource.Play();
             Destroy(gameObject, 1);
         }
     }
