@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 3684269469913148210}
   - component: {fileID: 3546924938577392989}
   - component: {fileID: -9132685889518071589}
+  - component: {fileID: 3338559092491471620}
   m_Layer: 0
   m_Name: BulletEnemy
   m_TagString: Untagged
@@ -346,3 +347,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &3338559092491471620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3684269469913148211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16a66d770e42c9b40be141381add19b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 10
+  lifeTime: 5
+  rig: {fileID: 3684269469913148210}
+  impactEffect: {fileID: 6585852359204246437, guid: 3ef4d3953a58bed48a187917b4c74af1, type: 3}
+  damage: 10
+  damageEnemy: 0
+  damagePlayer: 1
