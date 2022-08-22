@@ -813,8 +813,8 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!64 &45912664
-MeshCollider:
+--- !u!135 &45912666
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -823,10 +823,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2432090755550338912, guid: cb01af10c05f7be4f9e41927138bdf76, type: 3}
+  serializedVersion: 2
+  m_Radius: 2.5
+  m_Center: {x: -2.5, y: 4.45, z: -3}
 --- !u!4 &46268668 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5199894186730882758, guid: 7cf102c14ff7acf408448d88c764f726, type: 3}
@@ -3604,8 +3603,8 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!64 &245106283
-MeshCollider:
+--- !u!135 &245106285
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -3614,10 +3613,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2432090755550338912, guid: cb01af10c05f7be4f9e41927138bdf76, type: 3}
+  serializedVersion: 2
+  m_Radius: 2.5
+  m_Center: {x: -2.5, y: 4.45, z: -3}
 --- !u!1001 &250653433
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5842,8 +5840,8 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!64 &447766022
-MeshCollider:
+--- !u!135 &447766022
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -5852,10 +5850,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2432090755550338912, guid: cb01af10c05f7be4f9e41927138bdf76, type: 3}
+  serializedVersion: 2
+  m_Radius: 2.5
+  m_Center: {x: -2.5, y: 4.45, z: -3}
 --- !u!4 &452670780 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5732885232444260290, guid: d9067cfe1f26603459df44a00bba513e, type: 3}
@@ -8503,8 +8500,8 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8164078558771037576, guid: cb01af10c05f7be4f9e41927138bdf76, type: 3}
   m_PrefabInstance: {fileID: 857200707}
   m_PrefabAsset: {fileID: 0}
---- !u!64 &680366557
-MeshCollider:
+--- !u!135 &680366557
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -8513,10 +8510,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2432090755550338912, guid: cb01af10c05f7be4f9e41927138bdf76, type: 3}
+  serializedVersion: 2
+  m_Radius: 2.5
+  m_Center: {x: -2.5, y: 4.45, z: -3}
 --- !u!1 &686221796
 GameObject:
   m_ObjectHideFlags: 0
@@ -14028,7 +14024,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 565c5a1e6b41ba848af1656a690d6425, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 8
   gravity: {x: 0, y: 0, z: 0}
   jumpSpeed: {x: 0, y: 0, z: 0}
 --- !u!114 &1064942872
@@ -14115,7 +14111,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 059c5e171b71c5044a9c80bed09f8587, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -15349,8 +15345,8 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!64 &1151194019
-MeshCollider:
+--- !u!135 &1151194019
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -15359,10 +15355,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2432090755550338912, guid: cb01af10c05f7be4f9e41927138bdf76, type: 3}
+  serializedVersion: 2
+  m_Radius: 2.5
+  m_Center: {x: -2.5, y: 4.45, z: -3}
 --- !u!1001 &1152222882
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20470,7 +20465,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1496178192}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -21596,8 +21591,8 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!64 &1569935482
-MeshCollider:
+--- !u!135 &1569935484
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -21606,10 +21601,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2432090755550338912, guid: cb01af10c05f7be4f9e41927138bdf76, type: 3}
+  serializedVersion: 2
+  m_Radius: 2.5
+  m_Center: {x: -2.5, y: 4.45, z: -3}
 --- !u!4 &1571188379 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5218616959423846152, guid: 2a63a1a3a4831ae40845f8aaad309f49, type: 3}
@@ -23043,8 +23037,8 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!64 &1660318104
-MeshCollider:
+--- !u!135 &1660318104
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -23053,10 +23047,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2432090755550338912, guid: cb01af10c05f7be4f9e41927138bdf76, type: 3}
+  serializedVersion: 2
+  m_Radius: 2.5
+  m_Center: {x: -2.5, y: 4.45, z: -3}
 --- !u!4 &1664655331 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5732885232444260290, guid: d9067cfe1f26603459df44a00bba513e, type: 3}
@@ -23341,8 +23334,8 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!64 &1679113880
-MeshCollider:
+--- !u!135 &1679113882
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -23351,10 +23344,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2432090755550338912, guid: cb01af10c05f7be4f9e41927138bdf76, type: 3}
+  serializedVersion: 2
+  m_Radius: 2.5
+  m_Center: {x: -2.5, y: 4.45, z: -3}
 --- !u!1001 &1679236809
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24343,8 +24335,8 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!64 &1730434420
-MeshCollider:
+--- !u!135 &1730434420
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -24353,10 +24345,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2432090755550338912, guid: cb01af10c05f7be4f9e41927138bdf76, type: 3}
+  serializedVersion: 2
+  m_Radius: 2.5
+  m_Center: {x: -2.5, y: 4.45, z: -3}
 --- !u!1001 &1733913572
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25716,8 +25707,8 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8164078558771037576, guid: cb01af10c05f7be4f9e41927138bdf76, type: 3}
   m_PrefabInstance: {fileID: 1588805943}
   m_PrefabAsset: {fileID: 0}
---- !u!64 &1819571955
-MeshCollider:
+--- !u!135 &1819571955
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -25726,10 +25717,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2432090755550338912, guid: cb01af10c05f7be4f9e41927138bdf76, type: 3}
+  serializedVersion: 2
+  m_Radius: 2.5
+  m_Center: {x: -2.5, y: 4.45, z: -3}
 --- !u!1001 &1821404407
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27791,8 +27781,8 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!64 &1970915429
-MeshCollider:
+--- !u!135 &1970915429
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -27801,10 +27791,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2432090755550338912, guid: cb01af10c05f7be4f9e41927138bdf76, type: 3}
+  serializedVersion: 2
+  m_Radius: 2.5
+  m_Center: {x: -2.5, y: 4.45, z: -3}
 --- !u!4 &1978890389 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5199894186730882758, guid: 7cf102c14ff7acf408448d88c764f726, type: 3}
@@ -36418,7 +36407,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 1861a1e802b859c44b2c16b3ca2f178e, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.4
+  m_Volume: 0.06
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -40642,6 +40631,7 @@ GameObject:
   - component: {fileID: 7226850794389255534}
   - component: {fileID: 7226850794389255535}
   - component: {fileID: 7226850794389255533}
+  - component: {fileID: 7226850794389255536}
   m_Layer: 0
   m_Name: NPCPrincipio 1
   m_TagString: Untagged
@@ -40659,9 +40649,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: bf595c74c9288b149bd03300aad6c649, type: 3}
+  m_audioClip: {fileID: 8300000, guid: a60a3eb34a4ec614cbe8ee55db59613b, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -40780,6 +40770,18 @@ MonoBehaviour:
     para que vuelvas a poner en marcha tu nave, solo deber\xE1s evitar los obstaculos"
   - " alg\xFAnos enemigos que te la har\xE1n dificil! \xA1bop-bop!"
   - "ModeloTx2022: Suerte extraterrestre, \xA1birip-bop!\n"
+--- !u!114 &7226850794389255536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7226850794389255532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acdb5d84f12acd24493f0ac96a1fb47b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   _audio: {fileID: 7226850794389255533}
 --- !u!95 &7226850795843619098
 Animator:
